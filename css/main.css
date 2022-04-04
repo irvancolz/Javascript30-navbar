@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.cta-btn {
+  background-color: #133416;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: .2rem;
+  font-size: 1.25rem;
+}
+
+.main-container {
+  background-color: #f3ede5;
+  padding: 3rem 14rem;
+  height: 100vh;
+}
+
+.main-container .topnav {
+  position: relative;
+}
+
+.main-container .topnav-menu-container {
+  background-color: #fff;
+  display: grid;
+  gap: .5rem;
+  border-radius: .5rem;
+  padding: 2rem;
+  position: absolute;
+  left: 20%;
+  top: 3rem;
+  width: 550px;
+}
+
+.main-container .topnav-menu-container.hide {
+  display: none;
+}
+
+.main-container .topnav-menu-container::before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  padding: .5rem;
+  transform: rotate(45deg);
+  top: -10px;
+  left: 25%;
+}
+
+.main-container .topnav-menu-container .title-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: none;
+  opacity: 0;
+}
+
+.main-container .topnav-menu-container .title-menu .menu-btn {
+  display: none;
+}
+
+.main-container .topnav-menu-container .title-menu h5 {
+  font-weight: 500;
+  color: #98a3ad;
+}
+
+.main-container .topnav-menu-container .topnav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.main-container .topnav-menu-container .topnav-menu:hover {
+  background-color: #f3f3f3;
+}
+
+.main-container .topnav-menu-container .topnav-menu .menu-title {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.main-container .topnav-menu-container .topnav-menu .menu-subtitle {
+  color: #98a3ad;
+  font-size: 1.2rem;
+}
+
+.main-container .topnav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  font-size: 1.25rem;
+}
+
+.main-container .topnav-section .main-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+}
+
+.main-container .topnav-section .main-logo-container .menu-btn {
+  display: none;
+}
+
+.main-container .topnav .navbar, .main-container .topnav .sign-in-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: none;
+}
+
+.main-container .topnav .navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: none;
+}
+
+.main-container .topnav .navbar {
+  gap: 3rem;
+}
+
+.main-container .topnav .navbar .topnav-menu-container {
+  border-radius: 1.5rem;
+}
+
+.main-container .topnav .sign-in-container {
+  gap: 1rem;
+}
+
+.main-container .topnav .nav-link {
+  color: #868482;
+}
+
+.main-container .hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: none;
+  padding: 8rem 0 5rem;
+}
+
+.main-container .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 63%;
+}
+
+.main-container .hero-text .cta-btn {
+  font-size: 1.5rem;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+.main-container .hero-title {
+  font-size: 5.5rem;
+}
+
+.main-container .hero-title span {
+  color: #f7b300;
+}
+
+.main-container .hero-subtitle {
+  color: #525151;
+  font-size: 1.45rem;
+}
+
+.main-container .hero-img {
+  width: 30%;
+}
+
+.main-container .hero-review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.main-container .hero-review-container .review {
+  margin-right: .5rem;
+}
+
+.main-container .sponsor {
+  text-align: center;
+}
+
+.main-container .sponsor-title {
+  font-size: 1.45rem;
+  color: #525151;
+  margin-bottom: 2rem;
+}
+
+.main-container .sponsor-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+    height: auto;
+  }
+  .main-container .topnav .main-logo-container {
+    width: 100%;
+  }
+  .main-container .topnav .main-logo-container .menu-btn {
+    display: block;
+  }
+  .main-container .topnav .navbar-container {
+    position: absolute;
+    padding: 1rem;
+    top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: none;
+    background-color: #f3ede5;
+    clip-path: circle(10% at 100% -50%);
+    transition: .75s;
+    box-shadow: 0.25rem 0.25rem 0.25rem #dddbdb;
+  }
+  .main-container .topnav .navbar-container.show {
+    clip-path: circle(1000%);
+  }
+  .main-container .topnav .navbar-container .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .main-container .topnav .navbar-container .navbar li {
+    width: calc(100vw - 5rem);
+    border-bottom: 1px solid #bebbbb;
+  }
+  .main-container .topnav .navbar-container .navbar .topnav-menu-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .main-container .topnav .navbar-container .navbar .topnav-menu-container::before {
+    display: none;
+  }
+  .main-container .topnav .navbar-container .navbar .topnav-menu-container .title-menu {
+    opacity: 1;
+  }
+  .main-container .topnav .navbar-container .navbar .topnav-menu-container .title-menu .menu-btn {
+    display: block;
+  }
+  .main-container .topnav .sign-in-container {
+    display: none;
+  }
+  .main-container .hero {
+    padding: 3rem .5rem;
+  }
+  .main-container .hero-text {
+    width: 100%;
+  }
+  .main-container .hero-title {
+    font-size: 3rem;
+  }
+  .main-container .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  .main-container .hero .cta-btn {
+    font-size: 1rem;
+  }
+  .main-container .hero-img {
+    display: none;
+  }
+  .main-container .sponsor {
+    padding: 3rem 1rem;
+  }
+  .main-container .sponsor-title {
+    font-size: 1.25rem;
+  }
+  .main-container .sponsor-logo {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .main-container .sponsor-logo .logo {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
